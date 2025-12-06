@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Secure Real Time Multiplayer Game</title>
+    <link rel="stylesheet" href="/public/style.css" />
+  </head>
+  <body>
+    <h1>Secure Real Time Multiplayer Game</h1>
+    <div class="container">
+      <canvas id="game" width="600" height="400"></canvas>
+      <div style="margin-left: 20px;">
+        <h3>Scoreboard</h3>
+        <ul id="players"></ul>
+        <p id="rank"></p>
+        <p>Controls: WASD or Arrow Keys</p>
+      </div>
+    </div>
+
+    <!-- Socket.io client -->
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- Lógica del juego en el cliente -->
+    <script type="module" src="/public/client.mjs"></script>
+  </body>
+</html>
